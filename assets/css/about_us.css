@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bellota Text', cursive;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container h3 {
+    font-family: 'Bodoni Moda', serif;
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 5px;
+    /* color: rgb(214, 236, 237); */
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.container .row .col .card .card-body h5 {
+    color: #36187d;
+    font-size: 2.0rem;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.container .row .col .card .card-body p {
+    color: #9987c1;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgb(216, 196, 237);
+}
+
+/* ekhane color change hocche na */
+.container .text-muted {
+    color: #c48732;
+    font-family: 'PT Serif', serif;
+    font-weight: 400; 
+}
+
+.card-img-top {
+    border-radius: 50%;
+    height: 250px !important;
+    width: 250px !important;
+    position: relative;
+    left: 80px;
+    top: -80px;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 100px !important;
+}
+
+.card:hover {
+    box-shadow: rgba(8, 5, 54, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.card-body {
+    margin-top: -50px;
+}
+
+.bi {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-img-top {
+
+        left: 48px !important;
+
+    }
+}

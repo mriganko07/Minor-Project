@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# Exclude existing files and directories from rewriting
+RewriteCond %{SCRIPT_FILENAME} -d [OR]
+RewriteCond %{SCRIPT_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Rewrite admin URLs
+RewriteRule ^admin/.*$ admin/index.php [L]
+
+# Rewrite other requests to index.php
+RewriteRule ^.*$ index.php [L]
